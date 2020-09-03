@@ -1,0 +1,14 @@
+#round{
+    display: none;
+}
+#gameover{
+    display: none;
+}
+
+body{
+    width: 80%;
+    margin: auto;
+}
+#newGame button{
+    font-size: 2rem;
+}
