@@ -44,7 +44,7 @@ function play(player) {
     roundNum++;
     var playerSym, computerSym;
 
-    document.getElementById("roundNumber").innerHTML = "Round " + roundNum;
+   
     var computer = Math.floor(Math.random() * Math.floor(3))
     switch (player) {
         case 0:
@@ -85,7 +85,7 @@ function play(player) {
         playerScore.innerHTML = playerWins;
     }
 
-
+ 
 
     if (playerWins == maxWins || computerWins == maxWins) {
         over = true;
@@ -96,5 +96,7 @@ function play(player) {
         } else {
             gameResult.innerHTML = "you Lose the Game!";
         }
+        return;
     }
+    document.getElementById("roundNumber").innerHTML = "Round " + roundNum;
 }
