@@ -1,32 +1,69 @@
-#round{
-    display: none;
+.visible {
+    display: block;
 }
-#gameover{
+
+.invisible {
     display: none;
 }
 
-body{
+body {
     width: 100%;
     margin: auto;
     max-width: 80rem;
 }
-button{
+
+button {
     font-size: 2rem;
     border-radius: 10px;
     padding: 10px;
-    width: 24%;
-    
+    width: 20%;
+    margin: 10px;
+
 }
-#result{
+
+#round .buttons button{
+        width: 30%;
+        max-width: 15rem;
+    }
+
+#result {
     height: 3rem;
     padding: 0.5rem;
 }
 
-#newGame, #round{
+#round,
+#newGame {
     background-color: beige;
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem lightgray;
+    margin: 10px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#gameover {
+    width: 40rem;
+    max-width: 100%;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 990px) {
+    #round {
+        padding: 3px;
+    }
 
     
+
+    button {
+        font-size: 1.1rem;
+        margin: 1px;
+        width: 24%;
+    }
 }

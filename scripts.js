@@ -16,20 +16,20 @@ var computerWins = 0;
 function newGame(z) {
     maxWins = z;
     roundNum = 1;
-    round.style.display = "block";
+    round.className = "visible";
     document.getElementById("roundNumber").innerHTML = "Round " + roundNum;
-    newGameMenu.style.display = "none";
+    newGameMenu.className = "invisible"
 
 }
 
 function newStart() {
     playerWins = 0;
     computerWins = 0;
-    newGameMenu.style.display = "block";
-    round.style.display = "none";
+    newGameMenu.className = "visible"
+    round.className = "invisible";
     computerScore.innerHTML = computerWins;
     playerScore.innerHTML = playerWins;
-    gameover.style.display = "none";
+    gameover.className = "invisible"
     over = false;
     result.innerHTML = "";
 
@@ -90,7 +90,7 @@ function play(player) {
     if (playerWins == maxWins || computerWins == maxWins) {
         over = true;
         
-        gameover.style.display = "block";
+        gameover.className = "visible"
         if (playerWins == maxWins) {
             gameResult.innerHTML = "you Win the Game!";
         } else {
