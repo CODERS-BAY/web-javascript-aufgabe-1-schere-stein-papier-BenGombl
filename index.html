@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+</head>
+
+<body>
+
+
+    <div id="newGame" class="visible">
+        <p>select Mode:</p>
+        <div class="buttons">
+            <button onclick=newGame(1)>first to win</button>
+            <button onclick=newGame(2)>first to 2</button>
+            <button onclick=newGame(3)>first to 3</button>
+            <button onclick=newGame(4)>first to 4</button>
+        </div>
+
+    </div>
+
+
+    <div id="round" class="invisible">
+        <h1 id="roundNumber"></h1>
+        <p>Score: <span id="player">0</span> : <span id="computer">0</span></p>
+        <div class="buttons">
+            <button onclick=play(0)>Rock</button>
+            <button onclick=play(1)>Paper</button>
+            <button onclick=play(2)>Scissors</button>
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+
+    <div id="gameover" class="invisible">
+        <p id="gameResult"></p>
+        <button onclick="newStart()">new Game</button>
+    </div>
+
+</body>
+
+
+</html><script src="scripts.js"></script>
